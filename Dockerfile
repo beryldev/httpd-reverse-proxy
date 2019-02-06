@@ -11,7 +11,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
 
 ENV APACHE_LOG_PATH=/var/log/httpd24
 
-EXPOSE 80
+EXPOSE 8090
 
 # Simple startup script to avoid some issues observed with container restart
 ADD run-httpd.sh /run-httpd.sh
